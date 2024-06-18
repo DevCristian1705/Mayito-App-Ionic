@@ -1,0 +1,54 @@
+{
+    "data" : [
+          {
+            "id": 1,   
+            "precio" : 0.5,
+            "descripcion" :"1/2 Kg"
+          },
+          {
+            "id": 2, 
+            "precio" : 1,
+            "descripcion" :"1 Kg"
+          },
+          {
+            "id": 3, 
+            "precio" : 1.5,
+            "descripcion" :"1 1/2 Kg"
+          },
+          {
+            "id": 4, 
+            "precio" : 2,
+            "descripcion" :"2 Kg"
+          },
+          {
+            "id": 5, 
+            "precio" : 2.5,
+            "descripcion" :"2 1/2 Kg"
+          },
+          {
+            "id": 6, 
+            "precio" : 3,
+            "descripcion" :"3 Kg"
+          },
+          {
+            "id": 7, 
+            "precio" : 3.5,
+            "descripcion" :"3 1/2 Kg"
+          },
+          {
+            "id": 8, 
+            "precio" : 4,
+            "descripcion" :"4 Kg"
+          },
+          {
+            "id": 9, 
+            "precio" : 4.5,
+            "descripcion" :"4 1/2 Kg"
+          },
+          {
+            "id": 10, 
+            "precio" : 5,
+            "descripcion" :"5 Kg"
+          }
+    ] 
+}

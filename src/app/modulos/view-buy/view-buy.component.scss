@@ -1,0 +1,74 @@
+:root {
+  --timing: 1.5s infinite linear;
+}
+
+
+ .content {    
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  text-align: center;
+  background: orange; 
+  border-top-right-radius: 800px;
+  border-bottom-left-radius: 800px;
+}
+
+.elemento {   
+  width: 100%;
+} 
+
+
+  .textoexito { 
+    transition: all 1s ease;
+    overflow: hidden;
+    display: flex;
+    justify-content: center; 
+    color: white;
+    font-weight: bold;
+  
+  }
+
+  .icono-exitoso {
+    font-size: 150px;
+    color: white;
+    font-weight: bold;
+    animation: loader--ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+  }
+ 
+ 
+
+ 
+
+.iconCheck{
+  position: relative; 
+  margin: 100px auto;
+  transform-style: preserve-3d; 
+  transform: rotateX(-80deg) rotateY(-10deg);
+  -webkit-transform: rotateX(-50deg) rotateY(-50deg);
+  animation-name: spin;
+  animation-duration: 5000ms;
+  animation-iteration-count: infinite; 
+}
+
+@keyframes spin{
+  from{
+    transform: rotateX(-20deg) rotateY(0deg);
+  }
+
+  to{
+    transform: rotateX(-20deg) rotateY(360deg);
+  }
+}
+
+
+.iconCheck .roof{
+  width: 200px;
+  height: 200px;
+  color: white;
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+}
+

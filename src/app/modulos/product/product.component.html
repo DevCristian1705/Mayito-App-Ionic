@@ -1,0 +1,84 @@
+<ion-grid class="m-o">  
+  
+  <ion-row class="BtnVolver "> 
+      <ion-button (click)="onBack()"> 
+        <ion-icon name="arrow-undo-outline"></ion-icon>
+      </ion-button> 
+  </ion-row> 
+  <ion-row *ngIf="!producto"> 
+      <img  width="100%" height="100%" src="../../../assets/img-fruit/imgBlanco.png" alt="Imagen">
+  </ion-row> 
+  <ion-row *ngIf="producto">  
+    <ion-col size="10" offset="1" >
+      <img  width="350px" height="350px" [src]="producto.img" alt="Imagen">
+    </ion-col>
+    <ion-col size="12" >
+        <p class="descripcionProducto">  {{ producto.descripcion }} </p>
+     </ion-col>
+  </ion-row> 
+
+
+
+  <ion-row *ngIf="producto"> 
+  <ion-col size="4" >
+    <hr class="border">
+  </ion-col>
+  <ion-col size="8" >
+    <p class="precioProducto">
+      {{ producto.precio | currency : 'S/ ' }} &nbsp; el KG.
+    </p>
+  </ion-col>
+</ion-row> 
+</ion-grid> 
+
+<ion-grid> 
+  <ion-row>
+    <ion-col size="12" >
+        <div class="preguntaKg f-16">
+          ¿CUANTOS KG DESEAS COMPRAR?
+        </div> 
+      <br>
+      <div class="GrillaPrecios">
+        <ion-card *ngFor="let item of precios" (click)="onSelectCantidad(item);">
+          <ion-card-header>
+            <ion-checkbox slot="start"></ion-checkbox>
+            <ion-label> <b> {{ item.descripcion }} </b> </ion-label>
+          </ion-card-header>   
+        </ion-card>  
+      </div> 
+    </ion-col> 
+  </ion-row> 
+</ion-grid> 
+ 
+ 
+<div class="footerPagar"> 
+    <div class="rowPagar">
+      <p class="textPagar"> TOTAL: <br>{{totalaPagar | currency : 'S/'}}  </p>
+      <ion-button class="botonAddCart" (click)="addToCart()">
+        <p class="f-15"> Añadir al carrito </p>
+        <ion-icon slot="end" name="cart"></ion-icon>
+      </ion-button> 
+    </div>  
+ </div>
+ 
+
+
+ <ion-modal #modal trigger="open-modal">
+  <ng-template>
+    <ion-content>
+      <ion-toolbar class="centrar">
+        <ion-title>¡Agregamos tu pedido!</ion-title> 
+      </ion-toolbar>
+      <div style="display: grid;">
+        <ion-button (click)="onBack()">
+          <p class="f-15"> Ver más Productos </p>
+          <ion-icon  slot="end" name="add-circle-outline"></ion-icon> 
+        </ion-button> 
+        <ion-button (click)="onGoBuy()">
+          <p class="f-15"> Pagar el pedido </p>
+          <ion-icon slot="end" name="cash-outline"></ion-icon> 
+        </ion-button> 
+      </div>  
+    </ion-content>
+  </ng-template>
+</ion-modal>

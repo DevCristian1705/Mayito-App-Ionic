@@ -1,0 +1,45 @@
+
+
+   
+<ion-row class="colorFondo"> 
+  <ion-col size="2" >
+    <span></span>
+  </ion-col>
+  <ion-col size="8" >
+    <h3 class="centrar colorFondo"> LISTA DE PRODUCTOS </h3>
+  </ion-col>
+  <ion-col size="2" >
+    <span></span>
+  </ion-col>
+</ion-row> 
+
+ 
+<cdk-virtual-scroll-viewport itemSize="100" class="list">
+  <div class="GrillaListProdcut">
+    <ion-card *ngFor="let item of list" >
+      <ion-card-header (click)="onviewProduct(item.id)">
+        <img [src]="item.img" height="170" alt="Imagen">  
+        <p class="preguntaKg f-18 m-0"> {{item.nombre }} </p>
+        <p class="preguntaKg f-18 m-0"> {{item.precio | currency : 'S/ '}} </p>
+      </ion-card-header>   
+    </ion-card> 
+  </div>   
+</cdk-virtual-scroll-viewport>
+  
+ 
+<div class="footerPagar"> 
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button tab="home" (click)="onReturnHome()">
+      <ion-icon name="home"></ion-icon>
+      <ion-label>Inicio</ion-label>
+    </ion-tab-button> 
+    
+
+    <ion-tab-button tab="cart" (click)="onviewShoppingCart()">
+      <ion-icon name="cart"></ion-icon>
+      <ion-label>Carrito Compra</ion-label>
+      <ion-badge class="bagdexD">{{countPedidos}}</ion-badge>
+    </ion-tab-button>
+
+  </ion-tab-bar>
+</div>

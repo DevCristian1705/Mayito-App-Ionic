@@ -1,0 +1,40 @@
+{
+    "data" : [
+          {
+            "id": 1,  
+            "nombre": "MANDARINA",
+            "precio": 1.00,
+            "img": "../assets/img-fruit/mandarina.jpg",
+            "descripcion" :"fruta natural para el jugo la ensalada"
+          },
+          {
+            "id": 2,
+            "nombre": "NARANJA",
+            "precio": 2.00,
+            "img": "../assets/img-fruit/naranja.jpg",
+            "descripcion" :"fruta natural para el jugo la ensalada"
+          },
+          {
+            "id": 3,
+            "nombre": "EMPANADA",
+            "precio": 8.00,
+            "img": "../assets/img-fruit/empanadas.jpg",
+            "descripcion" :"Producto casero, de calidad al mejor precio"
+          },
+          {
+            "id": 4,
+            "nombre": "GALLETA",
+            "precio": 8.00,
+            "img": "../assets/img-fruit/galleta.jpg",
+            "descripcion" :"Producto casero, de calidad al mejor precio"
+          },
+          {
+            "id": 5,
+            "nombre": "ALFAJOR",
+            "precio": 3.00,
+            "img": "../assets/img-fruit/empanadas.jpg",
+            "descripcion" :"Producto casero, de calidad al mejor precio"
+          }
+    ]
+
+}

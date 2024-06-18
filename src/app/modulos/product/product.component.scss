@@ -1,0 +1,48 @@
+
+
+ion-button {
+  height: 55px;
+  --background: orange; 
+  --color: white;
+  --border-radius: 50px;
+  --border-color: white;
+  --border-style: solid;
+  --border-width: 2px;
+  --padding-top: 10px;
+  --padding-bottom: 10px;
+  font-size: 20px;
+  --font-weight: bold;
+  }
+
+
+  ion-modal {
+    padding: 5% !important;
+    text-align: center; 
+    align-items: center;
+    --height: 22%;
+    --border-radius: 16px;
+    --box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    opacity: 0.97 !important;
+    background: cadetblue !important;
+    z-index: 99999999 !important;
+  }
+  
+  
+  ion-modal::part(backdrop) {
+    background: rgba(209, 213, 219);
+    opacity: 1;
+  }
+  
+  ion-modal ion-toolbar {
+    --background: rgb(14 116 144);
+    --color: white;
+  }
+  .GrillaPrecios ion-card:active{
+    background: #362c2c;
+  }
+  .GrillaPrecios ion-card:focus{
+    background: #362c2c;
+  }
+  .GrillaPrecios ion-card:hover{
+    background: #362c2c;
+  }

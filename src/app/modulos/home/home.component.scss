@@ -1,0 +1,228 @@
+.HomePage{
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: #c7c7c7;
+    background-image: url('../../../assets/img-fruit/HomeFondo.jpg');
+    height: 100vh;
+    margin-bottom: 10px;
+}
+  
+
+  .namecontent{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    text-align: center;
+    padding-left: 40px;
+  }
+
+  .teofrecemos{
+    background: orangered;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    font-weight: bold;
+    height: 80px;
+    color: white; 
+    border-radius: 50px; 
+  }
+
+
+  .text_shadows {
+    text-align: center;
+    font-family: bungee, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 95px;
+    color: #f38a05;
+    animation: shadows 1.2s cubic-bezier(0.51, 0.63, 1, 0.53) infinite, move 1.2s ease-in infinite;
+    letter-spacing: 0.4rem;
+    padding-left: 10px;
+    width: 100%;
+  }
+  
+  @keyframes shadows {
+    0% {
+      text-shadow: none;
+    }
+  
+    10% {
+      text-shadow: 3px 3px 0 #f49b90;
+    }
+  
+    20% {
+      text-shadow: 3px 3px 0 #f49b90, 6px 6px 0 #f28b7d;
+    }
+  
+    30% {
+      text-shadow: 3px 3px 0 #f49b90, 6px 6px 0 #f28b7d, 9px 9px #f07a6a;
+    }
+  
+    40% {
+      text-shadow: 3px 3px 0 #f49b90, 6px 6px 0 #f28b7d, 9px 9px #f07a6a, 12px 12px 0 #ee6352;
+    }
+  
+    50% {
+      text-shadow: 3px 3px 0 #f49b90, 6px 6px 0 #f28b7d, 9px 9px #f07a6a, 12px 12px 0 #ee6352;
+    }
+  
+    60% {
+      text-shadow: 3px 3px 0 #f49b90, 6px 6px 0 #f28b7d, 9px 9px #f07a6a, 12px 12px 0 #ee6352;
+    }
+  
+    70% {
+      text-shadow: 3px 3px 0 #f49b90, 6px 6px 0 #f28b7d, 9px 9px #f07a6a;
+    }
+  
+    80% {
+      text-shadow: 3px 3px 0 #f49b90, 6px 6px 0 #f28b7d;
+    }
+  
+    90% {
+      text-shadow: 3px 3px 0 #f49b90;
+    }
+  
+    100% {
+      text-shadow: none;
+    }
+  }
+  
+  @keyframes move {
+    0% {
+      transform: translate(0px, 0px);
+    }
+  
+    40% {
+      transform: translate(-12px, -12px);
+    }
+  
+    50% {
+      transform: translate(-12px, -12px);
+    }
+  
+    60% {
+      transform: translate(-12px, -12px);
+    }
+  
+    100% {
+      transform: translate(0px, 0px);
+    }
+  }
+
+  /* PRODCUTOS*/
+  h1 {
+    color: #333;
+    font-family: tahoma;
+    font-size: 3rem;
+    font-weight: 100;
+    line-height: 1.5;
+    text-transform: uppercase;
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+    width: 800px;
+  }
+   
+  .message {
+    background-color: yellow;
+    color: #dc2511;
+    display: block;
+    font-weight: 900;
+    overflow: hidden;
+    position: absolute;
+    padding-left: 0.5rem;
+    top: 0.2rem;
+    left: 0px;
+    animation: openclose 5s ease-in-out infinite;
+  }
+  
+  .word1, .word2, .word3 {
+    font-family: tahoma;
+  }
+  
+  @keyframes openclose {
+    0% {
+      top: 0.2rem;
+      width: 0;
+    }
+    5% {
+      width: 0;
+    }
+    15% {
+      width: 280px;
+    }
+    30% {
+      top: 0.2rem;
+      width: 280px;
+    }
+    33% {
+      top: 0.2rem;
+      width: 0;
+    }
+    35% {
+      top: 0.2rem;
+      width: 0;
+    }
+    38% {
+      top: -4.5rem;
+      
+    }
+    48% {
+      top: -4.5rem;
+      width: 330px;
+    }
+    62% {
+      top: -4.5rem;
+      width: 330px;
+    }
+    66% {
+      top: -4.5rem;
+      width: 0;
+      text-indent: 0;
+    }
+    71% {
+      top: -9rem;
+      width: 0;
+      text-indent: 5px;
+    }
+    86% {
+      top: -9rem;
+      width: 300px;
+    }
+    95% {
+      top: -9rem;
+      width: 300px;
+    }
+    98% {
+      top: -9rem;
+      width: 0;
+      text-indent: 5px;
+    }
+    100% {
+      top: 0;
+      width: 0;
+      text-indent: 0;
+    }
+  }
+
+ 
+
+.swiper-slide img {
+  width: auto;
+  max-width: 100%;
+  height: 200px !important;
+  width: 200px !important;
+  max-height: 100%;
+}
+
+ion-card{
+  border: solid seagreen;
+  border-radius: 50px;
+}
+

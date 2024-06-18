@@ -1,0 +1,43 @@
+<div class="HomePage">
+   
+    <div class="content">
+      <div class="elementos">
+        <h2 class="text_shadows"> MAYITO </h2>
+
+        <div class="teofrecemos"> 
+          <p> TE OFRECEMOS </p>
+        </div>
+
+        <div class="namecontent"> 
+          <h1>
+            <span>-</span>
+            <div class="message">
+              <div class="word1">Naranaja</div>
+              <div class="word2">Mandarina</div>
+              <div class="word3">Empanada</div>
+            </div>
+          </h1>
+        </div>
+      
+        <div> 
+          <ion-slides pager="true" [options]="slideOpts">
+            <ion-slide *ngFor="let item of list">
+              <ion-card (click)="onviewProduct(item.id);">
+                <ion-card-header>
+                  <img [src]="item.img" alt="Imagen"> 
+                  <br>
+                  <p class="sizePrecio"> {{item.precio | currency : 'S/ '}} </p>
+                </ion-card-header>   
+              </ion-card> 
+            </ion-slide>  
+          </ion-slides> 
+        </div>  
+
+       
+    </div> 
+
+
+  
+</div>
+
+  
